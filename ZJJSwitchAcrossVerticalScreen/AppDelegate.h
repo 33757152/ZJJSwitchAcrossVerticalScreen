@@ -10,8 +10,13 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+/** 设置方向 */
+- (void)setNewOrientation:(BOOL)fullscreen;
 
+/** 是否允许转向 */
+@property (nonatomic, assign) BOOL allowRotation;
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end
 
